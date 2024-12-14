@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Reg Form</title>
+    </head>
+    <body>
+        <form action="" method="get">
+        <fieldset style="width: fit-content; background-color: rgba(197, 236, 24, 0.288); ">
+           <legend style="text-align: left;">Reg Form</legend>
+           <table style="width: 50;">
+               <tr>
+                   <td>Name:</td>
+                   <td><input type="text" name="textname"  placeholder="Enter Name Here" maxlength="20" required></td>
+               </tr>
+               <tr>
+                   <td>Password:</td>
+                   <td><input type="password" name="password" placeholder="Enter Password Here" maxlength="10" required></td>
+               </tr>
+               <tr>
+                   <td>Email:</td>
+                   <td><input type="email" id="email" name="email" pattern=".+@gmail\.com" size="30" required placeholder="Enter Email here"></td>
+               </tr>
+               <tr>
+                <td>Date:</td>
+                <td> <input type="date" required></td>
+            </tr>
+            <tr>
+                <td>Phone No:</td>
+                <td> <input type="number" required></td>
+            </tr>
+            <tr>
+                <td>Select File:</td>
+                <td><input type="file" accept=".pdf,.docx" required></td>
+            </tr>
+            <tr>
+                <td>Gendre:</td>
+                <td> <label><input type="radio" name="gendre" value="Male" >Male</label>
+                    <label><input type="radio" name="gendre" value="Female">Female</label></td>
+            </tr>
+            <tr>
+                <td>Language:</td>
+                <td><label><input type="checkbox" name="language" value="Urdu" checked>Urdu</label>
+                    <label><input type="checkbox" name="language" value="English" >English</label></td>
+            </tr>
+            <tr>
+                <td>Course:</td>
+                <td> <select class="form-control">
+                    <option>CS & IT</option>
+                    <option>Physics</option>
+                    <option>Chemistry</option>
+                    <option>Math</option>
+                    <option>Zoology</option>
+                    <option>Botony</option>
+                    <option>Urdu</option>
+                    <option>English</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Comment:</td>
+                <td> <textarea id="comment" name="comment" rows="7" cols="30" placeholder="Enter your comment here:" required></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="reset" value="Refresh"></td>
+                <td><input type="submit" value="Register Now"></td>
+            </tr>
+           </table>
+        </fieldset>
+    </form>
+    </body>
+</html>
